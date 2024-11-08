@@ -1,4 +1,30 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+
 :root {
+    width: 100vw;
+    height: 100vh;
+  --bgColor: #121215;
+  --bgCard: #191035;
+  --bgColorGradient: linear-gradient(145deg, #2C0735, #0A0434);
+  --boxShadow: box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  --bgNavbar: #150f27;
+  --colorTitle: #FAD02E;
+  --colorInput: #A9A9A9;
+  --colorButton: #FFD750;
+  --colorAlter: #155ac9;
+  --colorExit: rgb(234, 49, 49);
+  --colorModals: rgba(0, 0, 0, 0.595);
+  --colorRealModals: #241a44;
+  --colorIcon: #763b85;
+  
+
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,4 +37,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+}
+.appGrid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: 
+  "nav nav nav nav nav nav nav nav"
+  "mai mai mai mai mai mai mai mai"
+  "foo foo foo foo foo foo foo foo";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: repeat(8, 1fr);
+}
+header{
+    grid-area: nav;
+    width: 100%;
+}
+main {
+    grid-area: mai;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+}
+footer {
+    grid-area: foo;
+    width: 100%;  
 }

@@ -1,0 +1,21 @@
+.modalsCart {
+    display: none;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    min-width: 100vw; 
+    min-height: 100vh;
+    background-color: var(--colorModals); 
+    z-index: 500;
+    justify-content: end;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modalsCart.show {
+    display: flex;
+    opacity: 1;
+}
+ .detailsAmount>h4, h6{
+    text-align: end;
+} 
+
